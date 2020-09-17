@@ -1,7 +1,7 @@
-DESCRIPTION = "A fsl-image-gui image with docker-ce support"
+DESCRIPTION = "A fsl-image-multimedia image with docker-ce support"
 LICENSE = "MIT"
 
-require recipes-fsl/images/fsl-image-gui.bb
+require recipes-fsl/images/fsl-image-multimedia.bb
 
 inherit distro_features_check
 

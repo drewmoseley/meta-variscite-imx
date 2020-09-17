@@ -7,7 +7,7 @@ For machines with Android support, it is a part of a larger script we use to cre
 It is a good example for using the output of the Yocto build to create a bootable SD card, and use it to flash the target NAND flash/eMMC.
 
 Note:
-Before running this script you need to bitbake fsl-image-gui.
+Before running this script you need to bitbake fsl-image-multimedia.
 
 
 Usage:
@@ -18,7 +18,7 @@ options:
   -h            Display help message
   -s            Only show partition sizes to be written, without actually write them
   -a            Automatically set the rootfs partition size to fill the SD card
-  -r            Select alternative rootfs for recovery images (default: build_x11/tmp/deploy/images/var-som-mx6/fsl-image-gui-var-som-mx6.*)
+  -r            Select alternative rootfs for recovery images (default: build_x11/tmp/deploy/images/var-som-mx6/fsl-image-multimedia-var-som-mx6.*)
 
 If you don't use the '-a' option, a default rootfs size of 3700MiB will be used.
 The '-r' option allows you to create a bootable sdcard with an alternative image for the installation to NAND flash or eMMC.

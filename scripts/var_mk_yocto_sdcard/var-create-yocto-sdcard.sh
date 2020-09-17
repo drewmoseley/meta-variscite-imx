@@ -24,7 +24,7 @@ else
 	else
 		readonly YOCTO_BUILD=${YOCTO_ROOT}/build_xwayland
 	fi
-	readonly YOCTO_DEFAULT_IMAGE=fsl-image-gui
+	readonly YOCTO_DEFAULT_IMAGE=fsl-image-multimedia
 fi
 echo "BSP type: ${BSP_TYPE}"
 

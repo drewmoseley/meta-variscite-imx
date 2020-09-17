@@ -20,7 +20,7 @@ if [[ -e ${YOCTO_ROOT}/b2qt-init-build-env ]] ; then
 else
 	readonly BSP_TYPE="YOCTO"
 	readonly YOCTO_BUILD=${YOCTO_ROOT}/build_xwayland
-	readonly YOCTO_DEFAULT_IMAGE=fsl-image-gui
+	readonly YOCTO_DEFAULT_IMAGE=fsl-image-multimedia
 fi
 echo "BSP type: ${BSP_TYPE}"
 

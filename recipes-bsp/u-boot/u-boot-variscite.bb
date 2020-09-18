@@ -4,7 +4,7 @@
 
 SUMMARY = "U-Boot for Variscite's i.MX boards"
 require recipes-bsp/u-boot/u-boot.inc
-inherit pythonnative
+inherit python3native
 
 PROVIDES += "u-boot"
 DEPENDS_append = " python dtc-native"

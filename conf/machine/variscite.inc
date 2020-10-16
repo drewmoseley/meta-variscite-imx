@@ -11,6 +11,8 @@ DEFAULTTUNE_mx8mn  ?= "cortexa53-crypto"
 DEFAULTTUNE_mx8mq  ?= "cortexa53-crypto"
 DEFAULTTUNE_mx8qxp ?= "cortexa35-crypto"
 
+OVERRIDES =. "variscite:"
+
 PREFERRED_PROVIDER_u-boot-fw-utils = "u-boot-fw-utils"
 PREFERRED_RPROVIDER_ptpd = "ptpd"
 PREFERRED_RPROVIDER_ptpd-dev = "ptpd"

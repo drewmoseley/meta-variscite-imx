@@ -1,17 +1,17 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}/:"
+FILESEXTRAPATHS_prepend_variscite := "${THISDIR}/${PN}/:"
 
-SRC_URI += " \
+SRC_URI_append_variscite = " \
           file://init \
           file://pulseaudio-bluetooth.conf \
           file://system.pa \
           file://pulseaudio.service \
 "
 
-FILES_${PN} += "${sysconfdir}/systemd/system/*"
+FILES_${PN}_append_variscite = " ${sysconfdir}/systemd/system/* "
 
-DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES', 'sysvinit', 'update-rc.d-native', '', d)}"
+DEPENDS_append_variscite = " ${@bb.utils.contains('DISTRO_FEATURES', 'sysvinit', 'update-rc.d-native', '', d)} "
 
-do_install_append() {
+do_install_append_variscite() {
 	install -d ${D}/${sysconfdir}/dbus-1/system.d
 	install -d ${D}/${sysconfdir}/pulse
 

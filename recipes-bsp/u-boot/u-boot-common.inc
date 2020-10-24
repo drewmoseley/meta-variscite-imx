@@ -11,6 +11,9 @@ SRCREV = "455f3570fb9192a6d893ee33f7be408bf4f8b07b"
 SRCBRANCH_imx6ul-var-dart = "imx_v2018.03_4.14.78_1.0.0_ga_var02"
 SRCREV_imx6ul-var-dart = "717f29898abe82ffa2d74515806c46094075285a"
 
+SRCBRANCH_imx8mm-var-dart = "lf-5.4.y_v2019.04_var01"
+SRCREV_imx8mm-var-dart = "74c22e7054d00f8fd8ac8b00ab89e5c0e0a50f7f"
+
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 
 S = "${WORKDIR}/git"

@@ -116,7 +116,7 @@ fi
 
 case $MACHINE in
 	"imx8mm-var-dart")
-		IMXBOOT_TARGET=flash_lpddr4_ddr4_evk
+		IMXBOOT_TARGET=flash_ddr4_evk
 		;;
 	"imx8mn-var-som")
 		IMXBOOT_TARGET=flash_ddr4_evk

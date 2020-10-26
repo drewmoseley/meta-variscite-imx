@@ -5,6 +5,8 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0;md5=801f80980d171dd6425
 
 DEPENDS += "${@bb.utils.contains('DISTRO_FEATURES','systemd','','update-rc.d-native',d)}"
 
+COMPATIBLE_MACHINE="(imx8qxp-var-som|imx8qm-var-som|imx8mq-var-dart|imx6ul-var-dart|imx8mn-var-som|imx8mm-var-dart)"
+
 SRC_URI = " \
 	file://variscite-wifi \
 	file://variscite-wifi-common.sh \
